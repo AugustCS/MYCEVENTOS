@@ -1,0 +1,396 @@
+*{
+	box-sizing: border-box;
+}
+a,span,img{
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+}
+.wrapper{
+	width: 1100px;
+	height: auto;
+	margin:0 auto;
+}
+.cabecera{
+	width: 100%;
+	height: auto;
+	font-family: 'Playfair Display', serif !important;
+	background:#FDFDEB;
+}
+.upflecha{
+	font-size: 20px;
+	color:white;
+	padding:15px;
+	background:#E4AB32;
+	border-radius: 50%;
+	position:fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 9999999;
+}
+.fixeado{
+	position:fixed;
+	top:0;
+	left:0;
+	background:rgba(253,253,235,0.9);
+	z-index: 999999999;
+}
+.boxcabecera img{
+	float:left;
+	width: 130px;
+	height: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.boxmenu{
+	width: 70%;
+	height: auto;
+	float:right;
+	text-align: right;
+	padding: 10px;
+	margin-top: 10px;
+}
+.boxmenu ul li{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 20px;
+	font-size: 20px;
+	color:black;
+}
+.boxmenu ul li a{
+	color:black;
+}
+#bomenu{
+	cursor:pointer;
+	font-size: 22px;
+	margin-top: 10px;
+	margin-right: 10px;
+	display: none;
+	padding: 10px;
+}
+.menuresponsive{
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+.menuresponsive ul li{
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px;
+	font-size: 20px;
+	color:black;
+}
+.menuresponsive ul li a{
+	color:black;
+}
+.fevento{
+	position:relative;
+	transition: all 0.6s linear;
+}
+.box_opcion_evento{
+	position:absolute;
+	left:0;
+	top:60px;
+	transition: all 0.6s linear;
+	z-index: 999999999;
+	display: none;
+}
+.box_opcion_evento li{
+	width: 100%;
+	float:left;
+	padding: 10px 15px;
+	background:#FDFDEB;
+	cursor: pointer;
+}
+.fevento:hover> ul{
+	display: block;
+}
+.clear{
+	clear:both;
+}
+.swiper-container{
+	width: 100%;
+	height: 650px;
+}
+.swiper-slide{
+	position:relative;
+}
+.swiper-slide span{
+	position:absolute;
+	top:20px;
+	left:40%;
+	transform: translate(-40%);
+	font-family: 'Satisfy', cursive;
+	font-size: 50px;
+	color:#FEF0AA;
+	font-weight: bold;
+	text-shadow: 3px 3px 2px #000;
+}
+.swiper-slide img{
+	background-size:cover;
+}
+.boxcontrolvideo{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: left;
+	border-radius: 5px;
+}
+.boxcontrolvideo span{
+	cursor:pointer;
+	padding: 10px;
+	border-radius: 5px;
+    font-family: 'Playfair Display', serif !important;
+}
+.active{
+	background:#E4AB32;
+	color:white; 
+}
+.boxvideo{
+	width: 100%;
+	height: auto;
+	background-image: url("../img/fondo2.png");
+	background-size: cover;
+}
+.wvideo{
+	padding: 40px;
+}
+.cajavideo{
+	width: 90%;
+	height: auto;
+	border:10px double white;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+.boxvideo video{
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	height: 100%;
+}
+.boxnosotros{
+	background-image: url("../img/fondocaja2.png");
+	background-size: cover;
+	width: 100%;
+	height: auto;
+}
+.wnosotros{
+	text-align: center;
+	padding: 30px 0;
+}
+.artinosotros{
+	display: inline-block;
+	vertical-align: top;
+	width: 60%;
+	height: 550px;
+	padding:30px;
+	padding-top: 45px;
+	border:5px solid #E4AB32;
+	border-radius: 10px;
+	font-family: 'Playfair Display', serif !important;
+}
+.artinosotros h2{
+	font-size: 30px;
+}
+.artinosotros p{
+	font-size: 20px;
+	text-align: justify;
+	margin:5px 0;
+}
+.artiimg{
+	display: inline-block;
+	vertical-align: top;
+	width:35%;
+	height: 550px;
+	padding: 30px;
+}
+.artiimg img{
+	width: 80%;
+	height: auto;
+	margin: 10px;
+	border-radius: 10px;
+	border:5px solid #E4AB32;
+}
+.ulnosotros{
+	text-align: left;
+	font-size: 20px;
+	margin-top: 15px;
+}
+.ulnosotros li{
+	margin:2px 0;
+}
+.ulnosotros li span{
+	margin-right: 5px;
+	color:#E4AB32;
+}
+.boxmatrimonio{
+	background-image: url("../img/boda.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 600px;
+}
+.boxslider{
+	width: 100%;
+	height: auto;
+	padding: 50px 0;
+	background-image: url("../img/fondo2.png");
+	background-size: cover;
+}
+#slider{
+	margin-bottom: 10px !important;
+}
+#carousel{
+	margin-bottom: 0px !important;
+}
+#carousel ul li img{
+	background-size: cover;
+	height: 150px;
+}
+.boxboda{
+	padding:15px 0;
+	text-align: center;
+}
+.boxboda h2{
+	font-size: 30px;
+		font-family: 'Playfair Display', serif !important;
+}
+.boxquino{
+	width: 100%;
+	height: auto;
+	padding: 50px 0;
+	padding-top:30px;
+}
+.wcarousel{
+	text-align: center;
+}
+.wcarousel h2{
+	padding: 20px 0;
+	font-size: 30px;
+		font-family: 'Playfair Display', serif !important;
+}
+#sliquino{
+	-webkit-box-shadow: 0 5px 38px 2px rgba(0, 0, 0, 0.6);
+	        box-shadow: 0 5px 38px 2px rgba(0, 0, 0, 0.6);
+}
+#sliquino img{
+	height: 400px;
+}
+/* box formulario */
+.boxformulario{
+	width: 100%;
+	height: auto;
+	background-image: url("../img/images/22.jpg");
+	background-size: cover;
+}	
+.wformulario{
+	padding:30px 0;
+}
+.formevento{
+	width: 50%;
+	height: auto;
+	border:6px solid #E4AB32;
+	border-radius: 4px;
+	margin:0 auto;
+	padding: 15px;
+	background: rgba(255,255,255,0.6);
+}
+.tituform{
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Playfair Display', serif !important;
+}
+.formevento label{
+	display: block;
+	width: 100%;
+	color:black;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+.formevento input[type="text"]{
+	width: 100%;
+	padding:10px;
+	border:2px solid #E4AB32;
+	margin-bottom: 8px;
+	border-radius: 4px;
+	font-size: 20px;
+}
+.formevento textarea{
+	width: 100%;
+	border:none;
+	border:2px solid #E4AB32;
+	max-width: 100%;
+	min-width: 100%;
+	max-height: 150px;
+	min-height: 150px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	font-size: 20px;
+}
+.subclear{
+	float:left;
+	padding:10px 15px;
+	border-radius: 25px;
+	color:white;
+	background:#E4AB32;
+	font-size: 18px;
+	border:2px double white;
+}
+.subsend{
+	float:right;
+	padding:10px 15px;
+	border-radius: 25px;
+	color:white;
+	background:#E4AB32;
+	font-size: 18px;
+	border:2px double white;
+}
+.boxfooter{
+	width: 100%;
+	height: auto;
+	background-image: url("../img/fondo2.png");
+	background-size: cover;
+}
+.fowrapper{
+	padding:50px;
+	text-align: center;
+	font-family: 'Playfair Display', serif !important;
+}
+.boxmapa{
+	display: inline-block;
+	vertical-align: top;
+	width: 60%;
+	height: 400px;
+	border:10px double #E4AB32;
+}
+.boxmapa iframe{
+	width:100%;
+	height: 100%;
+	border:10px double #E4AB32;
+}
+.boxinfo{
+	display: inline-block;
+	vertical-align: top;
+	width: 35%;
+	height: 400px;
+	padding: 25px 10px;
+	text-align: left;
+}
+.spaubi{
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.boxinfo p{
+	font-size: 25px;
+	margin: 10px 0;
+}
+.boxcontacto{
+	padding-top: 20px;
+}
+.boxcontacto span{
+	font-size: 25px;
+}
+.boxcontacto span i{
+	margin-right: 5px;
+}
